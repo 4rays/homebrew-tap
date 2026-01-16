@@ -8,11 +8,18 @@ class AskDeepwiki < Formula
   depends_on "python@3.12"
 
   def install
-    python3 = "python3.12"
-    system python3, "-m", "venv", libexec
+    # Create wrapper script only during install phase
+    (bin/"ask-deepwiki").write <<~SH
+      #!/bin/bash
+      exec "#{libexec}/bin/ask-deepwiki" "$@"
+    SH
+  end
+
+  # Install Python packages in post_install to avoid Homebrew's relocation
+  def post_install
+    system "python3.12", "-m", "venv", libexec
     system libexec/"bin/pip", "install", "--upgrade", "pip"
     system libexec/"bin/pip", "install", "ask-deepwiki==#{version}"
-    bin.install_symlink libexec/"bin/ask-deepwiki"
   end
 
   test do
