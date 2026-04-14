@@ -2,7 +2,7 @@ class Xhammer < Formula
   desc "CLI + daemon for Xcode MCP bridge access"
   homepage "https://github.com/4rays/xhammer"
   url "https://github.com/4rays/xhammer/releases/download/v0.1.1/xhammer-0.1.1-macos.tar.gz"
-  sha256 "91229462fec16405f48b4e112fadaccd6762e1e63f5185c6ab35246210fe13ce"
+  sha256 "947d1372914d72f72a609240be286230a079e9aee84a862ba1cbb98e49d41cbb"
   version "0.1.1"
   license "MIT"
 
