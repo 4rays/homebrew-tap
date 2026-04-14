@@ -9,8 +9,8 @@ class Xhammer < Formula
   depends_on :macos
 
   def install
-    bin.install "xhammer-bin/xhammer"
-    bin.install "xhammer-bin/xhammerd"
+    bin.install "xhammer"
+    bin.install "xhammerd"
   end
 
   test do
