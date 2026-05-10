@@ -4,11 +4,13 @@ cask "icli" do
 
   github_token = ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))
 
+  # rubocop:disable Cask/Url
   url "https://api.github.com/repos/4rays/icli/releases/assets/416615341?filename=iCLI-#{version}.zip",
-      header:  [
+      header: [
         "Accept: application/octet-stream",
         "Authorization: Bearer #{github_token}",
       ]
+  # rubocop:enable Cask/Url
   name "iCLI"
   desc "Menu bar companion and CLI for Apple Calendar and Reminders"
   homepage "https://github.com/4rays/icli"
