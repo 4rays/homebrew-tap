@@ -30,6 +30,16 @@ brew install 4rays/tap/xhammer
 
 For more information, see the [xhammer repository](https://github.com/4rays/xhammer).
 
+### iCLI
+
+Menu bar companion and CLI for Apple Calendar and Reminders.
+
+```bash
+brew install --cask 4rays/tap/icli
+```
+
+For more information, see the [iCLI repository](https://github.com/4rays/icli).
+
 ## Updating a Formula
 
 When cutting a new release for a project:
