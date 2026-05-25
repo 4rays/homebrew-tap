@@ -1,6 +1,6 @@
 cask "icli" do
-  version "0.1.3"
-  sha256 "dbb7e7e6127f9178123a524584bceadb8f7a50076ba3e984f331544d8ace16d7"
+  version "0.1.4"
+  sha256 "7f170a8080354bfd6e7772e8601b8a88aa6ff52e253907cf7f2240dde694c748"
 
   url "https://github.com/4rays/icli/releases/download/v#{version}/iCLI-#{version}.zip"
   name "iCLI"
