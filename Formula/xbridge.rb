@@ -1,9 +1,9 @@
 class Xbridge < Formula
   desc "CLI + daemon for Xcode MCP bridge access"
   homepage "https://github.com/4rays/xbridge"
-  url "https://github.com/4rays/xbridge/releases/download/v0.1.3/xbridge-0.1.3-macos.tar.gz"
-  sha256 "33e483ac06f12033200ae22539c202bb040db23535ee3cced1b1ca3cc1eaa7fc"
-  version "0.1.3"
+  url "https://github.com/4rays/xbridge/releases/download/v0.2.0/xbridge-0.2.0-macos.tar.gz"
+  sha256 "0b128515088eb0d8de13756d0a779c6139e034afdb8e43729b4746b42f0a8495"
+  version "0.2.0"
   license "MIT"
 
   depends_on :macos
