@@ -3,7 +3,6 @@ class Xbridge < Formula
   homepage "https://github.com/4rays/xbridge"
   url "https://github.com/4rays/xbridge/releases/download/v0.9.2/xbridge-0.9.2-macos.tar.gz"
   sha256 "7dae02223857b6af30ad54c8e259df9035ab9fbfab913ad8e2f061f331a7b572"
-  version "0.9.2"
   license "MIT"
 
   depends_on :macos
