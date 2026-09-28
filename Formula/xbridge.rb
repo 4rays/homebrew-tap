@@ -1,9 +1,9 @@
 class Xbridge < Formula
   desc "CLI + daemon for Xcode MCP bridge access"
   homepage "https://github.com/4rays/xbridge"
-  url "https://github.com/4rays/xbridge/releases/download/v0.9.0/xbridge-0.9.0-macos.tar.gz"
-  sha256 "6ccdd1a194856708626ada7c0e5596d295307f0d4c775c7edbf7809a5f818962"
-  version "0.9.0"
+  url "https://github.com/4rays/xbridge/releases/download/v0.9.2/xbridge-0.9.2-macos.tar.gz"
+  sha256 "7dae02223857b6af30ad54c8e259df9035ab9fbfab913ad8e2f061f331a7b572"
+  version "0.9.2"
   license "MIT"
 
   depends_on :macos
@@ -11,6 +11,7 @@ class Xbridge < Formula
   def install
     bin.install "xbridge"
     bin.install "xbridged"
+    bin.install "xbridge-allow"
   end
 
   test do
